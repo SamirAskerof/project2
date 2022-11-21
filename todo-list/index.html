@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./mobile.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-header"></div>
+        <div class="container-body">
+            <h1>To-Do List</h1>
+            <!-- !sort -->
+            <div class="img-container">
+                <i class="fa-solid fa-arrow-down-short-wide  arrow-down-icon"></i>
+            </div>
+
+            <!-- !task list -->
+            <ul class="input-group-ul direction-column " id="todo-list">
+
+            </ul>
+
+            <!-- !input todo -->
+            <form action="" id="todo-enter">
+                <div class="input-group mt-lg-input-group" id="input-section">
+                    <input type="text" id="todo" name="todo" aria-label="todo" />
+                    <img src="./img/timesIcon.svg" alt="" id="delete-img" onmouseover="redImg(this)"
+                        onmouseout="normalImg(this)" />
+                </div>
+            </form>
+
+            <!-- !button -->
+            <div class="button-group" id="btn-group-add">
+                <button id="btn-add">+</button>
+                <span>Add</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- js link -->
+    <script src="./app.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/4702de87a5.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
